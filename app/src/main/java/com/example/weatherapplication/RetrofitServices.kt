@@ -6,7 +6,6 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface RetrofitServices {
-
     @GET("v1/current.json?key=1bff2eea8efc43cc9d804812242005&")
    suspend fun getWeatherDetail(
         @Query("q") city:String

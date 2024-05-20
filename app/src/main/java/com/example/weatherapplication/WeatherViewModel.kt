@@ -21,6 +21,9 @@ class WeatherViewModel(
             if(response.isSuccessful) {
                 weatherDetailLiveData.postValue(response.body())
                 isloading.postValue(false)
+            } else {
+                //set state for error
+                //UI will respond to error to show that to user
             }
         }
     }
